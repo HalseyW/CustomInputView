@@ -10,9 +10,9 @@ import UIKit
 
 class CustomInputView: UIInputView {
     private static let preferredHeight: CGFloat = 58.0
-    let containerView = UIView()
+    private let containerView = UIView()
     let textView = UITextView()
-    let seperatorView = UIView()
+    private let seperatorView = UIView()
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -61,11 +61,14 @@ class CustomInputView: UIInputView {
         textView.textContainer.heightTracksTextView = true
         textView.isScrollEnabled = false
         textView.backgroundColor = .white
-        textView.font = UIFont.systemFont(ofSize: 18)
+        textView.font = UIFont.systemFont(ofSize: 17)
+        textView.layer.masksToBounds = true
+        textView.layer.cornerRadius = 5
+        textView.textContainerInset = UIEdgeInsets(top: 10, left: 5, bottom: 10, right: 5)
         textView.setContentHuggingPriority(.defaultHigh, for: NSLayoutConstraint.Axis.vertical)
         
         textView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 10.0).isActive = true
-        textView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -10.0).isActive = true
+        textView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8.0).isActive = true
         textView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20.0).isActive = true
         textView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20.0).isActive = true
     }
