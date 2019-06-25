@@ -14,6 +14,7 @@
 		776C30BD22C0CB2100A0A6D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776C30BC22C0CB2100A0A6D3 /* Assets.xcassets */; };
 		776C30C022C0CB2100A0A6D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C30BE22C0CB2100A0A6D3 /* LaunchScreen.storyboard */; };
 		776C30C922C0CB4600A0A6D3 /* CustomInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776C30C822C0CB4600A0A6D3 /* CustomInputView.swift */; };
+		7782161B22C1C12C002FD8F1 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7782161A22C1C12C002FD8F1 /* UIColor+Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		776C30BF22C0CB2100A0A6D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		776C30C122C0CB2100A0A6D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		776C30C822C0CB4600A0A6D3 /* CustomInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputView.swift; sourceTree = "<group>"; };
+		7782161A22C1C12C002FD8F1 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		F280FB3BFF0C4CDDE743E6A3 /* Pods-CustomInputView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomInputView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomInputView/Pods-CustomInputView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,6 +74,7 @@
 		776C30B422C0CB2000A0A6D3 /* CustomInputView */ = {
 			isa = PBXGroup;
 			children = (
+				7782161922C1C11A002FD8F1 /* Utils */,
 				776C30C722C0CB2700A0A6D3 /* View */,
 				776C30B522C0CB2000A0A6D3 /* AppDelegate.swift */,
 				776C30B722C0CB2000A0A6D3 /* ViewController.swift */,
@@ -89,6 +92,14 @@
 				776C30C822C0CB4600A0A6D3 /* CustomInputView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7782161922C1C11A002FD8F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7782161A22C1C12C002FD8F1 /* UIColor+Colors.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CA12A42B3F739680149393AB /* Frameworks */ = {
@@ -212,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				776C30B822C0CB2000A0A6D3 /* ViewController.swift in Sources */,
+				7782161B22C1C12C002FD8F1 /* UIColor+Colors.swift in Sources */,
 				776C30B622C0CB2000A0A6D3 /* AppDelegate.swift in Sources */,
 				776C30C922C0CB4600A0A6D3 /* CustomInputView.swift in Sources */,
 			);
