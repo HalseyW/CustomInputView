@@ -11,7 +11,7 @@ import UIKit
 class CustomInputView: UIInputView {
     private static let preferredHeight: CGFloat = 58.0
     private let containerView = UIView()
-    private let textView = UITextView()
+    let textView = UITextView()
     private let seperatorView = UIView()
 
     required init?(coder aDecoder: NSCoder) {
